@@ -190,5 +190,4 @@ def sumDigits_divide(number):
 	else:
 		return False
 	
-	
 		
