@@ -74,4 +74,121 @@ def sum_less_integer(number):
 		x += 1
 		
 	return sumintegers
+
+
+#Function 4:
+# Write a function that takes a non-negative integer as a parameter and returns its factorial.
+
+def factorial(number):
+''' Returns the given number's factorial '''
+	if ifpositive(number) == False:
+		print("Input has to be positive. Program cannot continue")
+		exit()
+		
+	productintegers = 1
+	x = 1
+	while x <= int(number):
+		productintegers *= x 
+		x += 1
+		
+	return productintegers
 	
+	
+#Function 5:
+#Write a boolean function that takes two positive integers as parameters and figures out whether the second number is a factor the first. 
+#In other words, returns true if the second number divides into the first number evenly, and false otherwise.
+
+def factor_of_first(number1, number2):
+	''' Figures out whether the second number is a factor of the first number '''
+	if ifpositive(number1) == False:
+		print("Input has to be positive. Program cannot continue")
+		exit()
+		
+	if ifpositive(number2) == False:
+		print("Input has to be positive. Program cannot continue")
+		exit()	
+		
+	divison = int(number1) % int(number2)
+	remainder = round(divison,1)
+	if remainder == 0:
+		return True
+	else:
+		return False
+		
+
+#Function 6:
+#Write a boolean function that takes a positive integer as a parameter and returns whether the number is a prime.
+
+def prime(number):
+	''' Returns whether the given number is prime or not '''
+	if ifpositive(number) == False:
+		print("Input has to be positive. Program cannot continue")
+		exit()
+		
+	intnumber = int(number)
+	divisor = 1
+	counter = 0
+	
+	while divisor < intnumber:
+		divison = intnumber % divisor
+		remainder = round(divison,1)
+		if remainder == 0:
+			counter += 1	
+		divisor += 1
+		
+	if counter == 1:
+		return True #prime
+	else:
+		return False #Not Prime
+		
+		
+#Function 7:
+#Write a boolean function that takes a positive integer as a parameter and returns whether the number is perfect. 
+#A perfect number is a number that equals the sum of proper its proper factors. A proper factor is any factor except the number itself. 
+
+def perfect(number):
+	''' returns whther the number is perfect or not '''
+	if ifpositive(number) == False:
+		print("Input has to be positive. Program cannot continue")
+		exit()
+		
+	intnumber = int(number)
+	divisor = 1
+	total = 0
+	while divisor < intnumber:
+		divison = intnumber % divisor
+		remainder = round(divison, 1)
+		if remainder == 0:
+			total += divisor
+		divisor += 1
+	if total == intnumber:
+		return True # Perfect
+	else:
+		return False #Not perfect 
+		
+		
+#Function 8:
+#Write a boolean function that takes a positive integer as a parameter and returns true if the sum of the digits of the number 
+#divides evenly into the number, false otherwise. You MUST call the sumDigits function you wrote in question 2 to define this function.
+
+def sumDigits_divide(number):
+	''' returns true if the sum of the digits of the number divides evenly into the number '''
+	if ifpositive(number) == False:
+		print("Input has to be positive. Program cannot continue")
+		exit()
+		
+	sumofDigits = sumDigits(number)
+	intnumber = int(number)
+	if sumofDigits == 0:
+		print("Divisor cannot be zero ")
+		return 
+		
+	divison = intnumber % sumofDigits
+	remainder = round(divison, 1)
+	if remainder == 0:
+		return True
+	else:
+		return False
+	
+	
+		
