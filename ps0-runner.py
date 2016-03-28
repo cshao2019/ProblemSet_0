@@ -54,15 +54,15 @@ print("")
 
 #Function 3
 print("Function 3: Test cases for the function sum_less_integer - returns the sum of all the integers that are less than the given number")
-number = 6544
+number = 654
 print("Case 1: Input = " + str(number))
 print(sum_less_integer(number))
 
-number = 100003
+number = 1003
 print("Case 2: Input = " + str(number))
 print(sum_less_integer(number))
 
-number = 0
+number = 1
 print("Case 3: Input = " + str(number))
 print(sum_less_integer(number))
 
@@ -75,11 +75,11 @@ number = 7
 print("Case 1: Input = " + str(number))
 print(factorial(number))
 
-number = 49
+number = 21
 print("Case 2: Input = " + str(number))
 print(factorial(number))
 
-number = 0
+number = 3
 print("Case 3: Input = " + str(number))
 print(factorial(number))
 
@@ -95,7 +95,7 @@ print("Case 1: Input = " + str(number1) + " and " + str(number2))
 print(factor_of_first(number1, number2))
 
 number1 = 100
-number2 = 3
+number2 = 4
 print("Case 1: Input = " + str(number1) + " and " + str(number2))
 print(factor_of_first(number1, number2))
 
@@ -109,7 +109,7 @@ print("")
 
 #Function 6
 print("Function 6: Test cases for the function prime - returns whether the number is a prime")
-number = 7
+number = 1
 print("Case 1: Input = " + str(number))
 print(prime(number))
 
@@ -117,7 +117,7 @@ number = 49
 print("Case 2: Input = " + str(number))
 print(prime(number))
 
-number = 0
+number = 2
 print("Case 3: Input = " + str(number))
 print(prime(number))
 
@@ -130,7 +130,7 @@ number = 8
 print("Case 1: Input = " + str(number))
 print(perfect(number))
 
-number = 498
+number = 28
 print("Case 2: Input = " + str(number))
 print(perfect(number))
 
@@ -147,7 +147,7 @@ number = 12
 print("Case 1: Input = " + str(number))
 print(sumDigits_divide(number))
 
-number = 5044
+number = 34
 print("Case 2: Input = " + str(number))
 print(sumDigits_divide(number))
 
