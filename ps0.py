@@ -80,7 +80,7 @@ def sum_less_integer(number):
 # Write a function that takes a non-negative integer as a parameter and returns its factorial.
 
 def factorial(number):
-''' Returns the given number's factorial '''
+	''' Returns the given number's factorial '''
 	if ifpositive(number) == False:
 		print("Input has to be positive. Program cannot continue")
 		exit()
