@@ -20,9 +20,9 @@ def oddeven(number):
 	remainder = round(divison,1)
 	
 	if remainder == 0:
-		return "The number is even. "
+		return True
 	else:
-		return "The number is odd. "
+		return False
 
 
 #Function 1:
