@@ -34,7 +34,7 @@ def numberDigits(number):
 		print("Input has to be positive. Program cannot continue")
 		exit()
 		
-	return "There are " + str(len(str(number))) + " digits in " + str(number) 
+	return len(str(number)) 
 	
 		
 #Function 2:
@@ -181,7 +181,7 @@ def sumDigits_divide(number):
 	intnumber = int(number)
 	if sumofDigits == 0:
 		print("Divisor cannot be zero ")
-		return 
+	return 
 		
 	divison = intnumber % sumofDigits
 	remainder = round(divison, 1)
@@ -189,5 +189,4 @@ def sumDigits_divide(number):
 		return True
 	else:
 		return False
-	
 		
