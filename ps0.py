@@ -181,7 +181,7 @@ def sumDigits_divide(number):
 	intnumber = int(number)
 	if sumofDigits == 0:
 		print("Divisor cannot be zero ")
-	return 
+		return 
 		
 	divison = intnumber % sumofDigits
 	remainder = round(divison, 1)
