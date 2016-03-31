@@ -46,11 +46,9 @@ def sumDigits(number):
 		print("Input has to be positive. Program cannot continue")
 		exit()
 		
-	newlist = list(str(number))
-	intlist = map(int, newlist)
+	newlist = list(str(number)) #puts the value of the number into a list
+	intlist = map(int, newlist) # Make the items in the list into integers
 	
-	#sum_of_all_digits= sum(intlist)
-	#loop
 	sum_of_all_digits = 0
 	for eachnumber in intlist:
 		sum_of_all_digits += eachnumber
@@ -68,10 +66,10 @@ def sum_less_integer(number):
 		exit()
 		
 	sumintegers = 0
-	x = 1
-	while x < int(number):
-		sumintegers += x 
-		x += 1
+	lessThanInt = 1
+	while lessThanInt < int(number):
+		sumintegers += lessThanInt 
+		lessThanInt += 1
 		
 	return sumintegers
 
@@ -86,10 +84,10 @@ def factorial(number):
 		exit()
 		
 	productintegers = 1
-	x = 1
-	while x <= int(number):
-		productintegers *= x 
-		x += 1
+	lessThanint = 1
+	while lessThanint <= int(number):
+		productintegers *= lessThanint 
+		lessThanint += 1
 		
 	return productintegers
 	
@@ -179,7 +177,8 @@ def sumDigits_divide(number):
 		
 	sumofDigits = sumDigits(number)
 	intnumber = int(number)
-	if sumofDigits == 0:
+	#If 0 is the denominator, will be undefined
+	if sumofDigits == 0: 
 		print("Divisor cannot be zero ")
 		return 
 		
