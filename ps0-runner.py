@@ -58,7 +58,7 @@ number = 654
 print("Case 1: Input = " + str(number))
 print(sum_less_integer(number))
 
-number = 1003
+number = 9
 print("Case 2: Input = " + str(number))
 print(sum_less_integer(number))
 
